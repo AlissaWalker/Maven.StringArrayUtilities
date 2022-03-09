@@ -71,10 +71,10 @@ public class StringArrayUtils {
      */ // TODO
     public static String[] reverse(String[] array) {
         int j= 0;   //declared int j as place holder for new array
-        String[] newArray = new String[array.length]; //created a place holder array = to the size of the 1st array
+        String[] newArray = new String[array.length];       //created a place holder array = to the size of the 1st array
         for (int i = array.length - 1; i >= 0; i--) {       //did a for loop setting i to the length -1 of the array to get the last index of the original array, i-- steps down each loop turn
-            newArray[j] = array[i];     //set new hold varible j to the index of the orginal array
-            j++;        //assigned j to the 2nd index so it adds 1 each time in the loop
+            newArray[j] = array[i];                         //set new hold varible j to the index of the orginal array
+            j++;                                            //assigned j to the 2nd index so it adds 1 each time in the loop
         }
 
         return newArray; //passes 3 of 3 test
@@ -85,12 +85,19 @@ public class StringArrayUtils {
      * @return true if the order of the array is the same backwards and forwards
      */ // TODO
     public static boolean isPalindromic(String[] array) {
+        //String [] newArray=  new String[array.length];
+        for(int i=0; i< array.length; i++){     //checks each element int he array
+            if(array[i] != array[array.length-1-i]){  // if the array
+                return false; // if its not in order return false
+            }
+        }
+
           /*  for(int i =0; i< array.length; i++){
             if(array.cha)
             }
            String [] arrayOrder =array.length;
         if(array.length)*/
-         return false;
+         return true; // if the array matched the same thing flipped return true 
     }
 
 
