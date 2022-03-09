@@ -61,39 +61,39 @@ public class StringArrayUtils {
             //2nd read the values of the index in the array
             //3rd return true if it has the specified value // 2nd branch in for loop
         }
-            return false;
+        return false;
+    }
+
+
+    /**
+     * @param array of String objects
+     * @return an array with identical contents in reverse order
+     */ // TODO
+    public static String[] reverse(String[] array) {
+        int j= 0;   //declared int j as place holder for new array
+        String[] newArray = new String[array.length]; //created a place holder array = to the size of the 1st array
+        for (int i = array.length - 1; i >= 0; i--) {       //did a for loop setting i to the length -1 of the array to get the last index of the original array, i-- steps down each loop turn
+            newArray[j] = array[i];     //set new hold varible j to the index of the orginal array
+            j++;        //assigned j to the 2nd index so it adds 1 each time in the loop
         }
 
+        return newArray; //passes 3 of 3 test
+    }
 
-        /**
-         * @param array of String objects
-         * @return an array with identical contents in reverse order
-         */ // TODO
-        public static String[] reverse (String[]array){
-            //String rev ="";
+    /**
+     * @param array array of String objects
+     * @return true if the order of the array is the same backwards and forwards
+     */ // TODO
+    public static boolean isPalindromic(String[] array) {
+          /*  for(int i =0; i< array.length; i++){
+            if(array.cha)
+            }
+           String [] arrayOrder =array.length;
+        if(array.length)*/
+         return false;
+    }
 
-            //rev.reverse()
 
-
-          //String   newArray  ;
-          //  String rev = new StringBuffer(String[]array).reverse().toString();
-
-          /*newArray.reve
-          newArray.
-            ArrayList<String> newArr = new ArrayList<>();
-            for(int i=0; i< array.length;i++){
-                newArr
-            }*/
-            return null;
-        }
-
-        /**
-         * @param array array of String objects
-         * @return true if the order of the array is the same backwards and forwards
-         */ // TODO
-        public static boolean isPalindromic (String[]array){
-            return false;
-        }
 
         /**
          * @param array array of String objects
